@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="css/main.css"/>
 </head>
 <body>
+
+    <div class="audio-container">
+        <EMBED src="audio/穿越时空的思恋.mp3" autostart="true" loop=20 width=0 height=0>
+    </div>
+
     <div class="container">
 
         <div class="header">
@@ -36,7 +41,6 @@
 
                 <div class="left_frame_menu">
                     <h5>文章列表</h5>
-
                     <div>
                         <ul class="blog_categories">
                         </ul>
