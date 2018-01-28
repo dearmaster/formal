@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.io.Serializable;
+import java.util.List;
 
 @Service
 @Transactional
@@ -21,4 +22,8 @@ public class BlogServiceImpl implements BlogService {
         return blogDao.save(blog);
     }
 
+    @Override
+    public List<Blog> load() {
+        return blogDao.load();
+    }
 }

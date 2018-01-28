@@ -6,8 +6,9 @@
 <head>
 
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Write Article</title>
+    <title>记录美好的一天</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="css/main.css"/>
     <link href="js/ueditor/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
     <script type="text/javascript" src="js/ueditor/third-party/jquery.min.js"></script>
     <script type="text/javascript" src="js/ueditor/third-party/template.min.js"></script>
@@ -15,7 +16,7 @@
     <script type="text/javascript" charset="utf-8" src="js/ueditor/umeditor.min.js"></script>
     <script type="text/javascript" src="js/ueditor/lang/zh-cn/zh-cn.js"></script>
 </head>
-<body background="img/bg.gif" style="text-align: left;">
+<body>
 
 <div style="width: 960px; margin-left: auto; margin-right: auto;">
     <h1 style="color: #ffffff; margin-left: 300px;">Write Article</h1>
@@ -73,10 +74,12 @@
         var categoryId = $('#category').val();
         var categoryName = $("#category").find("option:selected").text();
 
+        alert(categoryId + ', ' + categoryName);
+
         var blogJson = {
             subject: $.trim(blogSubject) == '' ? null : blogSubject,
             content: $.trim(blogContent) == '' ? null : blogContent,
-            blogCategory: {
+            category: {
                 id: categoryId,
                 name: categoryName
             },
@@ -87,13 +90,13 @@
         $.ajax({
             type: "post",
             dataType: "json",
-            url: '<%= ctx%>/mvc/blog/save',
+            url: '<%= ctx%>/blog/save',
             data: JSON.stringify(blogJson),
 //            data: blogJson,
             contentType: "application/json; charset=utf-8",
             success: function (data) {
                 if (data != "") {
-                    //alert(data);
+                    alert(data);
                 }
             },
             error: function () {

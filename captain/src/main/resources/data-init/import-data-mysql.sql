@@ -1,9 +1,9 @@
 use pure
 
-insert into t_captain_category(name, description) values ('生活小计', null)
-insert into t_captain_category(name, description) values ('摄影学习', null)
 insert into t_captain_category(name, description) values ('独家记忆', null)
-insert into t_captain_category(name, description) values ('走在路上', null)
+insert into t_captain_category(name, description) values ('行在路上', null)
+insert into t_captain_category(name, description) values ('摄影知识', null)
+insert into t_captain_category(name, description) values ('健身知识', null)
 
 -- insert into love_blog_tbl(subject, content, publish_time) values ('给Eval的信', '宝贝! 生日快乐', now())
 -- insert into love_blog_tbl(subject, content, publish_time) values ('测试1', '测试1数据', now())
@@ -20,3 +20,13 @@ insert into t_captain_category(name, description) values ('走在路上', null)
 -- insert into love_blog_category_tbl(name, description) values ("日记", "daily")
 -- insert into love_blog_category_tbl(name, description) values ("技术文章", "tech articles")
 -- insert into love_blog_category_tbl(name, description) values ("给宝贝的信", "letters to eval")
+
+        <div class="header">
+            <div class="sky"></div>
+            <div class="nav">
+                <ul>
+                    <li><a href="">独家记忆</a></li>
+                    <li><a href="">行在路上</a></li>
+                    <li><a href="">健身达人</a></li>
+                </ul>
+            </div>

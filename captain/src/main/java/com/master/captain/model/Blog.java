@@ -89,4 +89,17 @@ public class Blog {
         this.viewedTimes = viewedTimes;
     }
 
+    @Override
+    public String toString() {
+        return "Blog{" +
+                "id=" + id +
+                ", subject='" + subject + '\'' +
+                ", content='" + content + '\'' +
+                ", publishTime=" + publishTime +
+                ", latestUpdateTime=" + latestUpdateTime +
+                ", category=" + category +
+                ", viewedTimes=" + viewedTimes +
+                '}';
+    }
+
 }
