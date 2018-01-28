@@ -1,9 +1,9 @@
 use pure
 
-insert into t_captain_category(name, description) values ('独家记忆', null)
-insert into t_captain_category(name, description) values ('行在路上', null)
-insert into t_captain_category(name, description) values ('摄影知识', null)
-insert into t_captain_category(name, description) values ('健身知识', null)
+insert into t_captain_category(name, description) values ('memory', '独家记忆')
+insert into t_captain_category(name, description) values ('pad', '行在路上')
+insert into t_captain_category(name, description) values ('photography', '摄影知识')
+insert into t_captain_category(name, description) values ('health', '健身知识')
 
 -- insert into love_blog_tbl(subject, content, publish_time) values ('给Eval的信', '宝贝! 生日快乐', now())
 -- insert into love_blog_tbl(subject, content, publish_time) values ('测试1', '测试1数据', now())
