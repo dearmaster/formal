@@ -23,8 +23,11 @@ public class CategoryController {
     @RequestMapping("/load")
     @ResponseBody
     public List<Category> load() {
-        logger.info("Loading categories....");
-        return categoryService.loadCategories();
+        List<Category> list = categoryService.loadCategories();
+        if(logger.isDebugEnabled()) {
+            logger.debug(list);
+        }
+        return list;
     }
 
 }

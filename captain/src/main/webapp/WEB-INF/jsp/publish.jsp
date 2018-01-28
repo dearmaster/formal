@@ -1,7 +1,3 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%
-    String ctx = request.getContextPath();
-%>
 <html>
 <head>
 
@@ -24,18 +20,15 @@
 
         <table style="color: #ffffff; font-size: 14px;">
             <tr>
-                <td>Title</td>
+                <td>标题</td>
                 <td>
                     <input id="subject" type="text">
                 </td>
             </tr>
             <tr>
-                <td>Category</td>
+                <td>分类</td>
                 <td>
                     <select id="category">
-                        <%--<option value="测试分类1">测试分类1</option>
-                        <option value="测试分类2">测试分类2</option>
-                        <option value="测试分类3">测试分类3</option>--%>
                     </select>
                 </td>
             </tr>
@@ -56,7 +49,7 @@
 
     $.ajax({
         type: "get",
-        url: '<%= ctx%>/mvc/category/load',
+        url: 'category/load',
         contentType: "application/json; charset=utf-8",
         success: function (data) {
             if (data != "") {
