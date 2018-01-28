@@ -110,19 +110,9 @@
                 </configuration>
             </plugin>
             <plugin>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-maven-plugin</artifactId>
-                <version>9.0.6.v20130930</version>
-                <configuration>
-                    <webApp>
-                        <contextPath>/${artifactId}</contextPath>
-                    </webApp>
-                    <httpConnector>
-                        <port>9090</port>
-                        <host>localhost</host>
-                    </httpConnector>
-                    <scanIntervalSeconds>10</scanIntervalSeconds>
-                </configuration>
+                <groupId>org.mortbay.jetty</groupId>
+                <artifactId>maven-jetty-plugin</artifactId>
+                <version>6.1.26</version>
             </plugin>
         </plugins>
     </build>
