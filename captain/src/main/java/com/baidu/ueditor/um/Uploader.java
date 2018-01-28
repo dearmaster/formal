@@ -170,6 +170,11 @@ public class Uploader {
         return path;
     }
 
+    /**
+     * Save the files to the servlet path is not acceptable
+     * to me. Since it will be removed if redeploy the project.
+     * I need to change the folder
+     */
     private String getPhysicalPath(String path) {
         String servletPath = this.request.getServletPath();
         String realPath = this.request.getSession().getServletContext()

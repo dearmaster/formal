@@ -17,4 +17,14 @@ public class AppController {
         return "publish";
     }
 
+    @RequestMapping(value = {"/getContent"}, method = RequestMethod.GET)
+    public String navToGetContent() {
+        return "getContent";
+    }
+
+    @RequestMapping(value = {"/imageUp"}, method = RequestMethod.POST)
+    public String navToImageUp() {
+        return "imageUp";
+    }
+
 }

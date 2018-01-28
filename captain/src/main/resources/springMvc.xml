@@ -7,6 +7,7 @@
 
     <mvc:resources location="/WEB-INF/js/" mapping="/js/**/*"/>
     <mvc:resources location="/WEB-INF/img/" mapping="/img/**/*"/>
+    <mvc:resources location="/WEB-INF/jsp/upload/" mapping="/jsp/upload/**/*"/>
 
     <mvc:default-servlet-handler/>
 
